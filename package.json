@@ -3,7 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "scripts": {
-    "migrate": "bunx prisma migrate dev",
+    "migrate": "bunx prisma migrate dev --skip-seed",
     "db:seed": "bunx prisma db seed"
   },
   "devDependencies": {
