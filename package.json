@@ -2,6 +2,9 @@
   "name": "bun-prisma-seed",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "migrate": "bunx prisma migrate dev"
+  },
   "devDependencies": {
     "@types/bun": "latest",
     "prisma": "^5.15.0"
