@@ -12,6 +12,12 @@ db migrate
 bun run migrate
 ```
 
+prisma client generate
+
+```bash
+bunx prisma generate
+```
+
 db seed failed
 
 ```bash
