@@ -18,14 +18,34 @@ prisma client generate
 bunx prisma generate
 ```
 
-db seed failed
+### db seed failed
 
-```bash
-bun run db:seed-failed
+Change prisma.seed in package.json to the following
+
+```json
+"prisma": {
+  "seed": "bun ./prisma/seed_failed.ts"
+}
 ```
 
-db seed success
+Execute the following command
 
 ```bash
-bun run db:seed-success
+bun run db:seed
+```
+
+### db seed success
+
+Change prisma.seed in package.json to the following
+
+```json
+"prisma": {
+  "seed": "bun ./prisma/seed_success.ts"
+}
+```
+
+Execute the following command
+
+```bash
+bun run db:seed
 ```
